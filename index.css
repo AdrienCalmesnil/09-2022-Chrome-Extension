@@ -8,22 +8,42 @@ body {
 input {
     width: 100%;
     padding: 10px;
+    padding-left: 20px;
     box-sizing: border-box;
+    border-radius: 30px;
     border: 1px solid #5f9341;
     margin-bottom: 4px;
 }
 
 button {
+    padding: 10px 20px;
     background: #5f9341;
     color: white;
-    padding: 10px 20px;
+    box-shadow: 5px 5px 15px -3px #000000;
+    border-radius: 30px;
     border: 1px solid #5f9341;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background: #3a5a27;
+    border-color: #3a5a27;
+}
+
+button:active{
+    transform: translateY(3px);
 }
 
 #delete-btn {
     background: white;
     color: #5f9341;
+    transition: all 0.3s ease-in-out;
+}
+
+#delete-btn:hover {
+    background: #ececec;
 }
 
 ul {
